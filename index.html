@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nexi AI — Agencia IA</title>
+  <link rel="icon" type="image/png" href="favicon.png" />
   <meta name="description" content="Nexi AI es una agencia de inteligencia artificial en Bahía Blanca. Desarrollamos webs, agentes de IA y automatizaciones para negocios que quieren crecer." />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -558,18 +559,45 @@
 </footer>
 
 <script>
-  function handleSubmit(e) {
+  async function handleSubmit(e) {
     e.preventDefault();
-    const btn = e.target.querySelector('.btn-submit');
-    btn.textContent = '✓ Mensaje enviado';
-    btn.style.background = '#22c55e';
+    const form = e.target;
+    const btn = form.querySelector('.btn-submit');
+    const originalText = btn.textContent;
+    btn.textContent = 'Enviando...';
     btn.disabled = true;
-    setTimeout(() => {
-      btn.textContent = 'Enviar mensaje →';
-      btn.style.background = '';
+
+    const payload = {
+      nombre: form.nombre.value.trim(),
+      email: form.email.value.trim(),
+      servicio: form.servicio.value,
+      mensaje: form.mensaje.value.trim()
+    };
+
+    try {
+      const resp = await fetch('https://ian8n.fern8n.online/webhook/nexi-contacto', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      });
+      if (!resp.ok) throw new Error('HTTP ' + resp.status);
+      btn.textContent = '✓ Mensaje enviado';
+      btn.style.background = '#22c55e';
+      form.reset();
+      setTimeout(() => {
+        btn.textContent = originalText;
+        btn.style.background = '';
+        btn.disabled = false;
+      }, 4000);
+    } catch (err) {
+      btn.textContent = 'Error, reintentá';
+      btn.style.background = '#dc2626';
       btn.disabled = false;
-      e.target.reset();
-    }, 3000);
+      setTimeout(() => {
+        btn.textContent = originalText;
+        btn.style.background = '';
+      }, 4000);
+    }
   }
 
   // Smooth reveal on scroll
