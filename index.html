@@ -153,12 +153,6 @@ section{padding:7rem 1.5rem;position:relative}
 .proceso-step h3{font-size:1.05rem;font-weight:700;margin-bottom:.4rem}
 .proceso-step p{color:var(--gray);font-size:.86rem}
 
-/* ─────────── TRABAJOS ─────────── */
-.work-card{padding:0;overflow:hidden}
-.work-thumb{height:160px;display:flex;align-items:center;justify-content:center;font-size:3.2rem;border-bottom:1px solid var(--border);background:linear-gradient(135deg,var(--bg3),#143d24);position:relative;overflow:hidden}
-.work-thumb::after{content:'';position:absolute;inset:0;background:radial-gradient(circle at 50% 120%,rgba(74,222,128,.25),transparent 60%);opacity:0;transition:opacity .4s}
-.work-card:hover .work-thumb::after{opacity:1}
-.work-tag{font-size:.7rem;color:var(--green);text-transform:uppercase;letter-spacing:.1em;margin-bottom:.45rem}
 
 /* ─────────── PRECIOS ─────────── */
 #precios{background:linear-gradient(180deg,transparent,var(--bg2) 10%,var(--bg2) 90%,transparent)}
@@ -274,7 +268,6 @@ footer{border-top:1px solid var(--border);padding:2.8rem 1.5rem}
   <ul class="nav-links">
     <li><a href="#servicios">Servicios</a></li>
     <li><a href="#proceso">Proceso</a></li>
-    <li><a href="#trabajos">Trabajos</a></li>
     <li><a href="#precios">Precios</a></li>
     <li><a href="#nosotros">Nosotros</a></li>
   </ul>
@@ -324,7 +317,6 @@ footer{border-top:1px solid var(--border);padding:2.8rem 1.5rem}
     <div class="services-grid">
 
       <div class="service-card feat reveal">
-        <div class="badge-star">★ Lo más pedido</div>
         <div class="service-icon">🤖</div>
         <div class="service-name">Automatización e IA</div>
         <p class="service-desc">Agentes y flujos que hacen el trabajo repetitivo por vos: responder, ordenar, hacer seguimiento y publicar, sin que tengas que estar encima.</p>
@@ -396,23 +388,6 @@ footer{border-top:1px solid var(--border);padding:2.8rem 1.5rem}
   </div>
 </section>
 
-<!-- TRABAJOS -->
-<section id="trabajos">
-  <div class="container">
-    <div class="services-header reveal">
-      <div class="section-label">Trabajos</div>
-      <h2 class="section-title">Algunos de nuestros trabajos</h2>
-      <p class="section-sub">Proyectos reales para negocios locales. Tocá "Ver demo" para abrirlos.</p>
-    </div>
-    <div class="services-grid">
-      <div class="service-card work-card reveal"><div class="work-thumb">🦷</div><div style="padding:1.75rem"><div class="work-tag">Odontología</div><div class="service-name">Consultorio Dr. Benítez</div><p class="service-desc">Landing pensada para que los pacientes pidan turno directo por WhatsApp.</p><a href="trabajos/benitez-dentista.html" target="_blank" class="btn-outline" style="display:inline-block;margin-top:1.25rem;padding:.55rem 1.4rem;font-size:.85rem">Ver demo →</a></div></div>
-      <div class="service-card work-card reveal"><div class="work-thumb">🦷</div><div style="padding:1.75rem"><div class="work-tag">Odontología</div><div class="service-name">Consultorio Dr. Cáceres</div><p class="service-desc">Web profesional con servicios, ubicación y contacto rápido.</p><a href="trabajos/caceres-dentista.html" target="_blank" class="btn-outline" style="display:inline-block;margin-top:1.25rem;padding:.55rem 1.4rem;font-size:.85rem">Ver demo →</a></div></div>
-      <div class="service-card work-card reveal"><div class="work-thumb">🦷</div><div style="padding:1.75rem"><div class="work-tag">Odontología</div><div class="service-name">Consultorio Dr. Prieto</div><p class="service-desc">Landing clara y moderna, lista para captar nuevos pacientes.</p><a href="trabajos/prieto-dentista.html" target="_blank" class="btn-outline" style="display:inline-block;margin-top:1.25rem;padding:.55rem 1.4rem;font-size:.85rem">Ver demo →</a></div></div>
-      <div class="service-card work-card reveal"><div class="work-thumb">🩺</div><div style="padding:1.75rem"><div class="work-tag">Pediatría</div><div class="service-name">Dr. Baudino — Pediatra</div><p class="service-desc">Web cálida y confiable para que los papás reserven consulta.</p><a href="trabajos/baudino-pediatra.html" target="_blank" class="btn-outline" style="display:inline-block;margin-top:1.25rem;padding:.55rem 1.4rem;font-size:.85rem">Ver demo →</a></div></div>
-    </div>
-    <p style="text-align:center;color:var(--gray);font-size:.9rem;margin-top:2.5rem" class="reveal">¿Querés ver tu negocio así? <a href="#contacto" style="color:var(--green);text-decoration:none;font-weight:600">Escribinos →</a></p>
-  </div>
-</section>
 
 <!-- PRECIOS -->
 <section id="precios">
@@ -450,8 +425,7 @@ footer{border-top:1px solid var(--border);padding:2.8rem 1.5rem}
         <ul class="service-list"><li>1 página completa a medida</li><li>Diseño responsive + animaciones</li><li>SEO básico incluido</li><li>Hosting y dominio 1er año</li></ul>
       </div>
 
-      <div class="service-card reveal" style="border-color:rgba(74,222,128,.4)">
-        <div style="position:absolute;top:-1px;left:50%;transform:translateX(-50%);background:var(--green);color:var(--bg);font-size:.68rem;font-weight:800;padding:.25rem .8rem;border-radius:0 0 6px 6px;letter-spacing:.05em">MÁS ELEGIDO</div>
+      <div class="service-card reveal">
         <div class="service-icon">🏢</div>
         <div class="service-name">Web Institucional</div>
         <div class="price-tag" style="color:var(--white)">$300.000</div>
@@ -530,7 +504,7 @@ footer{border-top:1px solid var(--border);padding:2.8rem 1.5rem}
   <div class="footer-inner">
     <div class="footer-logo">nexi<span>.</span> <small style="color:var(--gray2);font-size:.7rem;letter-spacing:.15em;text-transform:uppercase">Agencia IA</small></div>
     <div class="footer-links">
-      <a href="#servicios">Servicios</a><a href="#proceso">Proceso</a><a href="#trabajos">Trabajos</a><a href="#precios">Precios</a><a href="#nosotros">Nosotros</a><a href="#contacto">Contacto</a>
+      <a href="#servicios">Servicios</a><a href="#proceso">Proceso</a><a href="#precios">Precios</a><a href="#nosotros">Nosotros</a><a href="#contacto">Contacto</a>
     </div>
     <div class="footer-copy">© 2026 NexiAI · Bahía Blanca, Argentina</div>
   </div>
