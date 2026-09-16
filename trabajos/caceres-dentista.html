@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dr. Nicolás Cáceres | Dentista en Bahía Blanca</title>
+  <meta name="description" content="Consultorio del Dr. Nicolás Cáceres en Bahía Blanca. Odontología general y estética dental con atención personalizada. Belgrano 83. Pedí turno hoy."/>
+  <meta name="keywords" content="dentista Bahía Blanca, odontólogo Bahía Blanca, Dr Cáceres dentista, turno odontólogo Bahía Blanca, odontología general"/>
+  <meta name="robots" content="index, follow"/>
+  <meta property="og:title" content="Dr. Nicolás Cáceres | Dentista en Bahía Blanca"/>
+  <meta property="og:description" content="Odontología general y estética con atención personalizada en Bahía Blanca."/>
+  <meta property="og:type" content="business.business"/>
+  <meta property="og:locale" content="es_AR"/>
+  <link rel="canonical" href="https://caceres-dental.vercel.app/"/>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Dentist","name":"Dr. Nicolás Cáceres – Odontólogo","address":{"@type":"PostalAddress","streetAddress":"Belgrano 83, Oficina 11","addressLocality":"Bahía Blanca","addressRegion":"Buenos Aires","addressCountry":"AR"},"telephone":"+542914539900","openingHours":"Mo-Fr 09:00-14:30","priceRange":"$$"}
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700;800&family=DM+Serif+Display&display=swap" rel="stylesheet"/>
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{--purple:#7C3AED;--purple-dark:#6D28D9;--purple-light:#EDE9FE;--violet:#8B5CF6;--white:#FFFFFF;--cream:#FAFAFA;--dark:#1C1033;--gray:#6B7280;--radius:16px}
+    html{scroll-behavior:smooth}
+    body{font-family:'DM Sans',sans-serif;background:var(--white);color:var(--dark);line-height:1.6}
+
+    nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,0.93);backdrop-filter:blur(14px);border-bottom:1px solid #EDE9FE;padding:0 5%;height:66px;display:flex;align-items:center;justify-content:space-between}
+    .logo{font-size:1.05rem;font-weight:800;color:var(--dark);text-decoration:none;display:flex;align-items:center;gap:10px}
+    .logo-dot{width:10px;height:10px;border-radius:50%;background:var(--purple)}
+    .nav-links{display:flex;gap:26px;list-style:none}
+    .nav-links a{color:var(--gray);text-decoration:none;font-size:0.88rem;font-weight:500;transition:color .2s}
+    .nav-links a:hover{color:var(--purple)}
+    .nav-btn{background:var(--purple);color:white;padding:9px 22px;border-radius:50px;text-decoration:none;font-size:0.88rem;font-weight:700;transition:all .2s}
+    .nav-btn:hover{background:var(--purple-dark);transform:scale(1.03)}
+    @media(max-width:768px){.nav-links{display:none}}
+
+    .hero{min-height:100vh;padding:100px 5% 80px;display:flex;align-items:center;background:linear-gradient(150deg,#F5F3FF 0%,#FFFFFF 55%,#F0FDF4 100%);position:relative;overflow:hidden}
+    .hero::before{content:'';position:absolute;top:-100px;right:-100px;width:450px;height:450px;border-radius:50%;background:radial-gradient(circle,rgba(124,58,237,0.08) 0%,transparent 70%)}
+    .hero-inner{max-width:1100px;margin:0 auto;width:100%;display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+    .chip{display:inline-flex;align-items:center;gap:8px;background:var(--purple-light);color:var(--purple);padding:6px 16px;border-radius:50px;font-size:0.8rem;font-weight:700;margin-bottom:22px}
+    h1{font-family:'DM Serif Display',serif;font-size:clamp(2.2rem,4vw,3.4rem);line-height:1.1;margin-bottom:18px;color:var(--dark)}
+    h1 em{font-style:normal;color:var(--purple)}
+    .desc{color:var(--gray);font-size:1rem;margin-bottom:34px;max-width:440px}
+    .actions{display:flex;gap:12px;flex-wrap:wrap}
+    .btn-main{background:var(--purple);color:white;padding:14px 28px;border-radius:50px;text-decoration:none;font-weight:700;font-size:0.92rem;display:inline-flex;align-items:center;gap:8px;box-shadow:0 6px 24px rgba(124,58,237,0.3);transition:all .2s}
+    .btn-main:hover{background:var(--purple-dark);transform:translateY(-2px)}
+    .btn-sec{background:white;border:2px solid #EDE9FE;color:var(--dark);padding:12px 26px;border-radius:50px;text-decoration:none;font-size:0.92rem;font-weight:600;transition:all .2s}
+    .btn-sec:hover{border-color:var(--purple);color:var(--purple)}
+    .stats{display:flex;gap:32px;margin-top:44px;padding-top:32px;border-top:2px solid #EDE9FE}
+    .stat strong{display:block;font-size:1.8rem;font-weight:800;color:var(--purple)}
+    .stat span{font-size:0.78rem;color:var(--gray)}
+
+    .hero-right{display:flex;flex-direction:column;gap:16px}
+    .hcard{background:white;border-radius:var(--radius);padding:24px;box-shadow:0 4px 24px rgba(124,58,237,0.08);border:1px solid #EDE9FE}
+    .hcard-row{display:flex;align-items:center;gap:12px;margin-bottom:14px}
+    .av{width:46px;height:46px;border-radius:50%;background:linear-gradient(135deg,var(--purple),var(--violet));display:flex;align-items:center;justify-content:center;color:white;font-weight:800;font-size:0.9rem}
+    .hcard-row strong{display:block;font-size:0.95rem;font-weight:700}
+    .hcard-row span{font-size:0.78rem;color:var(--gray)}
+    .stars{color:#F59E0B;font-size:0.85rem;margin-bottom:10px}
+    .review{font-size:0.88rem;color:var(--gray);font-style:italic;line-height:1.6}
+    .pill-green{display:inline-flex;align-items:center;gap:8px;background:#ECFDF5;border:1px solid #A7F3D0;border-radius:50px;padding:7px 14px;font-size:0.78rem;font-weight:700;color:#065F46}
+    .dot-g{width:8px;height:8px;border-radius:50%;background:#10B981}
+    @media(max-width:768px){.hero-inner{grid-template-columns:1fr}.hero-right{display:none}}
+
+    section{padding:88px 5%}
+    .lbl{text-align:center;color:var(--purple);font-size:0.78rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;margin-bottom:10px}
+    h2{text-align:center;font-family:'DM Serif Display',serif;font-size:clamp(1.8rem,3vw,2.5rem);margin-bottom:12px;color:var(--dark)}
+    .sub{text-align:center;color:var(--gray);font-size:0.97rem;max-width:480px;margin:0 auto 52px}
+
+    .servicios{background:var(--cream)}
+    .sgrid{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+    .sc{background:white;border-radius:var(--radius);padding:28px 22px;border:2px solid transparent;transition:all .2s}
+    .sc:hover{border-color:var(--purple-light);transform:translateY(-3px);box-shadow:0 8px 28px rgba(124,58,237,0.08)}
+    .si{width:48px;height:48px;background:var(--purple-light);border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:1.4rem;margin-bottom:16px}
+    .sc h3{font-size:1rem;font-weight:700;margin-bottom:8px}
+    .sc p{font-size:0.84rem;color:var(--gray);line-height:1.6}
+
+    .porque{background:white}
+    .pinner{max-width:1000px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+    .plist{list-style:none;display:flex;flex-direction:column;gap:20px}
+    .pitem{display:flex;gap:14px;align-items:flex-start}
+    .pcheck{width:36px;height:36px;min-width:36px;border-radius:10px;background:var(--purple-light);display:flex;align-items:center;justify-content:center;color:var(--purple);font-weight:800;font-size:0.9rem}
+    .pitem h4{font-size:0.95rem;font-weight:700;margin-bottom:4px}
+    .pitem p{font-size:0.84rem;color:var(--gray)}
+    .pvisual{background:linear-gradient(135deg,#4C1D95,#7C3AED,#8B5CF6);border-radius:24px;padding:44px 32px;text-align:center;color:white}
+    .pbig{font-family:'DM Serif Display',serif;font-size:5rem;line-height:1;margin-bottom:8px}
+    .pvisual p{color:rgba(255,255,255,0.7);font-size:0.9rem;margin-bottom:24px}
+    .pdiv{height:1px;background:rgba(255,255,255,0.15);margin:20px 0}
+    .pfacts{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    .pfacts strong{display:block;font-family:'DM Serif Display',serif;font-size:1.7rem;color:white}
+    .pfacts span{font-size:0.78rem;color:rgba(255,255,255,0.6)}
+    @media(max-width:768px){.pinner{grid-template-columns:1fr}}
+
+    .testimonios{background:var(--cream)}
+    .tgrid{max-width:1000px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+    .tcard{background:white;border-radius:var(--radius);padding:26px;border:2px solid #EDE9FE}
+    .tstars{color:#F59E0B;margin-bottom:12px}
+    .ttext{font-size:0.9rem;color:var(--gray);font-style:italic;line-height:1.7;margin-bottom:16px}
+    .tautor{font-size:0.82rem;font-weight:700;color:var(--purple)}
+
+    .contacto{background:var(--dark);color:white}
+    .contacto h2{color:white;font-family:'DM Serif Display',serif}
+    .contacto .lbl{color:#A78BFA}
+    .contacto .sub{color:rgba(255,255,255,0.55)}
+    .cinner{max-width:900px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:48px}
+    .cinfo{display:flex;flex-direction:column;gap:20px}
+    .ci{display:flex;gap:14px;align-items:flex-start}
+    .ci-ico{width:42px;height:42px;min-width:42px;background:rgba(124,58,237,0.15);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1rem}
+    .ci h4{font-size:0.78rem;color:rgba(255,255,255,0.4);margin-bottom:2px}
+    .ci p{font-size:0.95rem;color:white;font-weight:600}
+    .cform{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:var(--radius);padding:30px;display:flex;flex-direction:column;gap:12px}
+    .cform input,.cform select{background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:10px;padding:12px 16px;color:white;font-size:0.88rem;font-family:'DM Sans',sans-serif;outline:none;transition:border-color .2s;width:100%}
+    .cform input::placeholder{color:rgba(255,255,255,0.3)}
+    .cform input:focus,.cform select:focus{border-color:var(--violet)}
+    .cform select option{background:var(--dark)}
+    .btn-wa{background:#25D366;color:white;padding:14px;border-radius:10px;font-weight:700;font-size:0.92rem;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;text-decoration:none;transition:all .2s;font-family:'DM Sans',sans-serif}
+    .btn-wa:hover{background:#1fba58;transform:translateY(-2px)}
+    @media(max-width:768px){.cinner{grid-template-columns:1fr}}
+
+    footer{background:#0D0820;text-align:center;padding:22px 5%;color:rgba(255,255,255,0.35);font-size:0.8rem}
+    footer strong{color:#A78BFA}
+  </style>
+</head>
+<body>
+<nav>
+  <a href="#" class="logo"><div class="logo-dot"></div>Dr. Cáceres</a>
+  <ul class="nav-links"><li><a href="#servicios">Servicios</a></li><li><a href="#nosotros">Nosotros</a></li><li><a href="#opiniones">Opiniones</a></li><li><a href="#contacto">Contacto</a></li></ul>
+  <a href="#contacto" class="nav-btn">Pedir turno</a>
+</nav>
+
+<section class="hero" id="inicio">
+  <div class="hero-inner">
+    <div>
+      <div class="chip">🦷 Odontólogo en Bahía Blanca</div>
+      <h1>Tu dentista de <em>confianza</em> en el centro</h1>
+      <p class="desc">Atención personalizada, sin listas de espera largas. Belgrano 83, disponible de lunes a viernes por la mañana.</p>
+      <div class="actions">
+        <a href="https://wa.me/5492914539900?text=Hola%20Dr.%20C%C3%A1ceres%2C%20quiero%20pedir%20un%20turno" class="btn-main" target="_blank">📅 Pedir turno</a>
+        <a href="#servicios" class="btn-sec">Ver servicios</a>
+      </div>
+      <div class="stats">
+        <div class="stat"><strong>10/10</strong><span>Calificación</span></div>
+        <div class="stat"><strong>Mañana</strong><span>Turnos disponibles</span></div>
+        <div class="stat"><strong>Centro</strong><span>Belgrano 83</span></div>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="pill-green"><div class="dot-g"></div>Atendemos esta semana</div>
+      <div class="hcard">
+        <div class="hcard-row"><div class="av">NC</div><div><strong>Dr. Nicolás Cáceres</strong><span>Odontólogo · Belgrano 83, Of. 11</span></div></div>
+        <div class="stars">★★★★★</div>
+        <p class="review">"Excelente profesional. Trato cercano, me explicó todo con paciencia y el resultado fue muy bueno. Lo recomiendo."</p>
+      </div>
+      <div class="hcard" style="background:#F5F3FF;">
+        <div style="font-size:0.88rem;font-weight:700;color:var(--purple);margin-bottom:6px;">🕐 Horario cómodo</div>
+        <div style="font-size:0.84rem;color:var(--gray);">Lunes a viernes de 9:00 a 14:30 hs. Ideal si trabajás de tarde.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="servicios" id="servicios">
+  <div class="lbl">Servicios</div>
+  <h2>¿En qué podemos ayudarte?</h2>
+  <p class="sub">Odontología general y estética en un consultorio donde siempre te atiende el mismo profesional.</p>
+  <div class="sgrid">
+    <div class="sc"><div class="si">🦷</div><h3>Odontología general</h3><p>Controles, limpiezas y caries. Tu salud bucal siempre al día.</p></div>
+    <div class="sc"><div class="si">✨</div><h3>Estética dental</h3><p>Blanqueamiento y restauraciones para mejorar el aspecto de tu sonrisa.</p></div>
+    <div class="sc"><div class="si">🔬</div><h3>Tratamiento de conducto</h3><p>Endodoncia precisa y sin dolor. Salvamos la pieza antes de extraer.</p></div>
+    <div class="sc"><div class="si">⚕️</div><h3>Extracciones</h3><p>Simples y complejas con anestesia efectiva y mínima molestia.</p></div>
+    <div class="sc"><div class="si">🩺</div><h3>Urgencias</h3><p>Dolor repentino o pieza rota. Te atendemos el mismo día.</p></div>
+    <div class="sc"><div class="si">🛡️</div><h3>Prevención</h3><p>Revisaciones periódicas para que los problemas no crezcan.</p></div>
+  </div>
+</section>
+
+<section class="porque" id="nosotros">
+  <div class="lbl">Por qué elegirnos</div>
+  <h2>Un dentista que te conoce</h2>
+  <p class="sub">No somos una clínica masiva. Somos un consultorio donde el profesional es el centro.</p>
+  <div class="pinner">
+    <ul class="plist">
+      <li class="pitem"><div class="pcheck">✓</div><div><h4>Siempre el mismo profesional</h4><p>Tu historial en manos de una sola persona, sin rotaciones.</p></div></li>
+      <li class="pitem"><div class="pcheck">✓</div><div><h4>Ubicación céntrica</h4><p>Belgrano 83, fácil acceso desde cualquier punto de la ciudad.</p></div></li>
+      <li class="pitem"><div class="pcheck">✓</div><div><h4>Horario matutino</h4><p>De 9 a 14:30, perfecto si no podés salir de tarde.</p></div></li>
+      <li class="pitem"><div class="pcheck">✓</div><div><h4>Presupuesto claro</h4><p>Sin sorpresas ni letras chicas. Sabés el costo antes de empezar.</p></div></li>
+    </ul>
+    <div class="pvisual">
+      <div class="pbig">10</div>
+      <p>puntaje perfecto en Google</p>
+      <div class="pdiv"></div>
+      <div class="pfacts">
+        <div><strong>10/10</strong><span>Puntaje</span></div>
+        <div><strong>Centro</strong><span>Belgrano 83</span></div>
+        <div><strong>Lun-Vie</strong><span>09-14:30</span></div>
+        <div><strong>100%</strong><span>Personalizado</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="testimonios" id="opiniones">
+  <div class="lbl">Opiniones</div>
+  <h2>Lo que dicen nuestros pacientes</h2>
+  <p class="sub">Calificación perfecta en Google. Pacientes reales, experiencias reales.</p>
+  <div class="tgrid">
+    <div class="tcard"><div class="tstars">★★★★★</div><p class="ttext">"Atención excelente desde el primer momento. El Dr. Cáceres es muy claro, te explica todo y se toma su tiempo."</p><span class="tautor">— Sofía M.</span></div>
+    <div class="tcard"><div class="tstars">★★★★★</div><p class="ttext">"Fui por una urgencia y me atendió el mismo día. Profesional de primera, el tratamiento fue perfecto."</p><span class="tautor">— Gustavo R.</span></div>
+    <div class="tcard"><div class="tstars">★★★★★</div><p class="ttext">"Muy buen trato y ambiente tranquilo. Nada que ver con las clínicas grandes donde te sentís un número."</p><span class="tautor">— Lorena F.</span></div>
+  </div>
+</section>
+
+<section class="contacto" id="contacto">
+  <div class="lbl">Contacto</div>
+  <h2>Pedí tu turno hoy</h2>
+  <p class="sub">Respondemos por WhatsApp de lunes a viernes en horario de atención.</p>
+  <div class="cinner">
+    <div class="cinfo">
+      <div class="ci"><div class="ci-ico">📍</div><div><h4>Dirección</h4><p>Belgrano 83, Oficina 11<br>Bahía Blanca</p></div></div>
+      <div class="ci"><div class="ci-ico">🕐</div><div><h4>Horario</h4><p>Lunes a Viernes<br>09:00 – 14:30 hs</p></div></div>
+      <div class="ci"><div class="ci-ico">📞</div><div><h4>WhatsApp</h4><p>+54 9 291 453-9900</p></div></div>
+    </div>
+    <div class="cform">
+      <input type="text" placeholder="Tu nombre"/>
+      <input type="tel" placeholder="Tu WhatsApp"/>
+      <select><option value="" disabled selected>¿Qué necesitás?</option><option>Limpieza dental</option><option>Caries</option><option>Blanqueamiento</option><option>Urgencia</option><option>Control general</option></select>
+      <a href="https://wa.me/5492914539900?text=Hola%20Dr.%20C%C3%A1ceres%2C%20quiero%20pedir%20un%20turno" class="btn-wa" target="_blank">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+        Contactar por WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+<footer><p>© 2025 <strong>Dr. Nicolás Cáceres – Odontólogo</strong> · Belgrano 83 Of. 11, Bahía Blanca · Todos los derechos reservados.</p></footer>
+</body>
+</html>

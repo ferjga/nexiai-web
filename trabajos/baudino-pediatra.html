@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dra. María Luján Baudino — Pediatra en Bahía Blanca</title>
+<meta name="description" content="Consultorio pediátrico de la Dra. María Luján Baudino en Bahía Blanca. Atención desde el nacimiento hasta los 14 años. Obras sociales. Turnos: 291-517-0370.">
+<meta name="keywords" content="pediatra Bahía Blanca, pediatra Baudino, consultorio pediátrico Bahía Blanca, médico niños Bahía Blanca, pediatra obras sociales Bahía Blanca">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="Dra. María Luján Baudino — Pediatra en Bahía Blanca">
+<meta property="og:description" content="Atención pediátrica desde el nacimiento hasta los 14 años. Centrada en la familia, la salud y el desarrollo de tu hijo.">
+<meta property="og:type" content="website">
+<link rel="canonical" href="https://baudino-pediatra.vercel.app/">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Physician",
+  "name": "Dra. María Luján Baudino",
+  "medicalSpecialty": "Pediatrics",
+  "description": "Consultorio pediátrico en Bahía Blanca. Atención desde el nacimiento hasta los 14 años.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Blandengues 472",
+    "addressLocality": "Bahía Blanca",
+    "addressRegion": "Buenos Aires",
+    "addressCountry": "AR"
+  },
+  "telephone": "+542915170370",
+  "priceRange": "$$",
+  "url": "https://baudino-pediatra.vercel.app/"
+}
+</script>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&family=Nunito+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+
+  :root {
+    --sky: #0ea5e9;
+    --sky-light: #e0f2fe;
+    --sky-mid: #bae6fd;
+    --teal: #0d9488;
+    --coral: #fb923c;
+    --coral-light: #fff7ed;
+    --text: #1e293b;
+    --muted: #64748b;
+    --white: #ffffff;
+    --bg: #f8fafc;
+    --card: #ffffff;
+    --border: #e2e8f0;
+  }
+
+  body {
+    font-family: 'Nunito Sans', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+  }
+
+  /* ── NAV ── */
+  nav {
+    background: var(--white);
+    border-bottom: 1px solid var(--border);
+    padding: 0 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 68px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.05);
+  }
+
+  .nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+  }
+
+  .nav-logo .logo-icon {
+    width: 38px; height: 38px;
+    background: var(--sky);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+  }
+
+  .nav-logo .logo-text {
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+    font-weight: 800;
+    color: var(--text);
+    line-height: 1.2;
+  }
+
+  .nav-logo .logo-text span {
+    display: block;
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--muted);
+    letter-spacing: 0.5px;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 28px;
+  }
+
+  nav ul a {
+    text-decoration: none;
+    color: var(--muted);
+    font-size: 14px;
+    font-weight: 600;
+    transition: color 0.2s;
+  }
+
+  nav ul a:hover { color: var(--sky); }
+
+  .nav-cta {
+    background: var(--sky);
+    color: var(--white) !important;
+    padding: 9px 20px;
+    border-radius: 8px;
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    transition: background 0.2s !important;
+  }
+
+  .nav-cta:hover { background: #0284c7 !important; color: white !important; }
+
+  @media (max-width: 640px) {
+    nav { padding: 0 20px; }
+    nav ul { display: none; }
+  }
+
+  /* ── HERO ── */
+  .hero {
+    background: linear-gradient(160deg, #f0f9ff 0%, #e0f2fe 50%, #f0fdf4 100%);
+    padding: 80px 48px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: -100px; right: -100px;
+    width: 500px; height: 500px;
+    background: radial-gradient(circle, rgba(14,165,233,0.12) 0%, transparent 65%);
+    pointer-events: none;
+  }
+
+  .hero::after {
+    content: "";
+    position: absolute;
+    bottom: -80px; left: -80px;
+    width: 400px; height: 400px;
+    background: radial-gradient(circle, rgba(251,146,60,0.08) 0%, transparent 65%);
+    pointer-events: none;
+  }
+
+  .hero-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+  }
+
+  @media (max-width: 800px) {
+    .hero { padding: 60px 20px; }
+    .hero-inner { grid-template-columns: 1fr; gap: 40px; }
+    .hero-visual { order: -1; }
+  }
+
+  .hero-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--white);
+    border: 1px solid var(--sky-mid);
+    color: var(--sky);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 6px 14px;
+    border-radius: 50px;
+    margin-bottom: 20px;
+    font-family: 'Nunito', sans-serif;
+  }
+
+  .hero h1 {
+    font-family: 'Nunito', sans-serif;
+    font-size: clamp(30px, 4.5vw, 52px);
+    font-weight: 900;
+    line-height: 1.1;
+    letter-spacing: -1px;
+    color: var(--text);
+    margin-bottom: 16px;
+  }
+
+  .hero h1 em {
+    font-style: normal;
+    color: var(--sky);
+  }
+
+  .hero-tagline {
+    font-size: 18px;
+    color: var(--muted);
+    margin-bottom: 28px;
+    font-weight: 500;
+    font-style: italic;
+    border-left: 3px solid var(--coral);
+    padding-left: 14px;
+    line-height: 1.5;
+  }
+
+  .hero-desc {
+    font-size: 15px;
+    color: var(--muted);
+    margin-bottom: 36px;
+    line-height: 1.8;
+  }
+
+  .hero-buttons {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+
+  .btn-primary {
+    background: var(--sky);
+    color: white;
+    padding: 14px 28px;
+    border-radius: 12px;
+    font-weight: 800;
+    font-size: 15px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: 'Nunito', sans-serif;
+    transition: background 0.2s, transform 0.15s;
+    box-shadow: 0 4px 14px rgba(14,165,233,0.3);
+  }
+
+  .btn-primary:hover { background: #0284c7; transform: translateY(-2px); }
+
+  .btn-secondary {
+    background: var(--white);
+    color: var(--text);
+    padding: 14px 28px;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 15px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: 'Nunito', sans-serif;
+    border: 2px solid var(--border);
+    transition: border-color 0.2s, transform 0.15s;
+  }
+
+  .btn-secondary:hover { border-color: var(--sky); transform: translateY(-2px); }
+
+  /* HERO VISUAL */
+  .hero-visual {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .hero-card {
+    background: var(--white);
+    border-radius: 20px;
+    padding: 24px 28px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+    border: 1px solid var(--border);
+  }
+
+  .hero-card .hc-top {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 16px;
+  }
+
+  .hero-card .hc-avatar {
+    width: 52px; height: 52px;
+    background: var(--sky-light);
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    flex-shrink: 0;
+  }
+
+  .hero-card .hc-name {
+    font-family: 'Nunito', sans-serif;
+    font-size: 17px;
+    font-weight: 800;
+    color: var(--text);
+    line-height: 1.2;
+  }
+
+  .hero-card .hc-role {
+    font-size: 13px;
+    color: var(--sky);
+    font-weight: 600;
+  }
+
+  .hero-card .hc-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    border-top: 1px solid var(--border);
+    padding-top: 16px;
+  }
+
+  .hc-stat { text-align: center; }
+
+  .hc-stat .st-num {
+    font-family: 'Nunito', sans-serif;
+    font-size: 22px;
+    font-weight: 900;
+    color: var(--sky);
+    line-height: 1;
+  }
+
+  .hc-stat .st-label {
+    font-size: 11px;
+    color: var(--muted);
+    margin-top: 2px;
+    line-height: 1.3;
+  }
+
+  .pill-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .pill {
+    background: var(--sky-light);
+    color: var(--sky);
+    border: 1px solid var(--sky-mid);
+    padding: 6px 14px;
+    border-radius: 50px;
+    font-size: 13px;
+    font-weight: 700;
+    font-family: 'Nunito', sans-serif;
+  }
+
+  .pill.coral {
+    background: var(--coral-light);
+    color: var(--coral);
+    border-color: #fed7aa;
+  }
+
+  /* ── SECTIONS ── */
+  .section-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 90px 48px;
+  }
+
+  @media (max-width: 640px) {
+    .section-inner { padding: 60px 20px; }
+  }
+
+  .section-label {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--sky);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-family: 'Nunito', sans-serif;
+  }
+
+  .section-title {
+    font-family: 'Nunito', sans-serif;
+    font-size: clamp(24px, 3.5vw, 38px);
+    font-weight: 900;
+    color: var(--text);
+    letter-spacing: -0.5px;
+    margin-bottom: 12px;
+    line-height: 1.15;
+  }
+
+  .section-desc {
+    font-size: 16px;
+    color: var(--muted);
+    max-width: 520px;
+    line-height: 1.7;
+    margin-bottom: 52px;
+  }
+
+  /* ── SOBRE MÍ ── */
+  #sobre { background: var(--white); }
+
+  .sobre-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+    align-items: center;
+  }
+
+  @media (max-width: 800px) {
+    .sobre-grid { grid-template-columns: 1fr; gap: 36px; }
+  }
+
+  .sobre-left .sobre-quote {
+    background: var(--sky-light);
+    border-left: 4px solid var(--sky);
+    border-radius: 0 16px 16px 0;
+    padding: 20px 24px;
+    margin-bottom: 24px;
+    font-size: 16px;
+    color: var(--text);
+    font-style: italic;
+    font-weight: 600;
+    line-height: 1.6;
+  }
+
+  .sobre-left p {
+    font-size: 15px;
+    color: var(--muted);
+    line-height: 1.8;
+    margin-bottom: 16px;
+  }
+
+  .sobre-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 24px;
+  }
+
+  .sobre-badge {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 10px 16px;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--text);
+    font-family: 'Nunito', sans-serif;
+  }
+
+  .sobre-badge span { font-size: 18px; }
+
+  .sobre-right {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .review-card {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 20px 22px;
+    position: relative;
+  }
+
+  .review-card::before {
+    content: """;
+    font-size: 48px;
+    color: var(--sky-mid);
+    font-family: Georgia, serif;
+    line-height: 1;
+    position: absolute;
+    top: 10px; left: 18px;
+  }
+
+  .review-card p {
+    font-size: 14px;
+    color: var(--text);
+    line-height: 1.7;
+    padding-left: 28px;
+    font-style: italic;
+  }
+
+  .review-stars {
+    color: #f59e0b;
+    font-size: 13px;
+    margin-top: 10px;
+    padding-left: 28px;
+  }
+
+  /* ── SERVICIOS ── */
+  #servicios { background: var(--bg); }
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  @media (max-width: 800px) {
+    .services-grid { grid-template-columns: 1fr; }
+  }
+
+  .service-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 32px 28px;
+    transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+  }
+
+  .service-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(14,165,233,0.1);
+    border-color: var(--sky-mid);
+  }
+
+  .service-icon {
+    width: 52px; height: 52px;
+    background: var(--sky-light);
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    margin-bottom: 18px;
+  }
+
+  .service-card h3 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 17px;
+    font-weight: 800;
+    color: var(--text);
+    margin-bottom: 8px;
+  }
+
+  .service-card p {
+    font-size: 14px;
+    color: var(--muted);
+    line-height: 1.7;
+  }
+
+  /* ── OBRAS SOCIALES ── */
+  #coberturas { background: var(--white); }
+
+  .coberturas-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .cobertura-pill {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 10px 18px;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--text);
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .cobertura-pill::before {
+    content: "✓";
+    color: var(--sky);
+    font-weight: 800;
+    font-size: 12px;
+  }
+
+  .cobertura-note {
+    margin-top: 20px;
+    font-size: 13px;
+    color: var(--muted);
+  }
+
+  /* ── TEMAS ── */
+  #temas { background: linear-gradient(160deg, #f0f9ff 0%, #f0fdf4 100%); }
+
+  .temas-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+  }
+
+  @media (max-width: 900px) {
+    .temas-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  @media (max-width: 500px) {
+    .temas-grid { grid-template-columns: 1fr; }
+  }
+
+  .tema-item {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 14px 16px;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: border-color 0.2s;
+  }
+
+  .tema-item:hover { border-color: var(--sky-mid); }
+
+  .tema-item::before {
+    content: "→";
+    color: var(--sky);
+    font-weight: 800;
+    flex-shrink: 0;
+  }
+
+  /* ── CONTACTO ── */
+  #contacto { background: var(--white); }
+
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: start;
+  }
+
+  @media (max-width: 700px) {
+    .contact-grid { grid-template-columns: 1fr; gap: 36px; }
+  }
+
+  .contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 20px;
+    text-decoration: none;
+  }
+
+  .contact-icon {
+    width: 46px; height: 46px;
+    background: var(--sky-light);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    flex-shrink: 0;
+  }
+
+  .contact-item .ci-label {
+    font-size: 12px;
+    color: var(--muted);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 3px;
+  }
+
+  .contact-item .ci-value {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text);
+    font-family: 'Nunito', sans-serif;
+  }
+
+  .whatsapp-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: #25D366;
+    color: white;
+    padding: 16px 32px;
+    border-radius: 14px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    text-decoration: none;
+    margin-top: 8px;
+    box-shadow: 0 4px 18px rgba(37,211,102,0.3);
+    transition: background 0.2s, transform 0.15s;
+  }
+
+  .whatsapp-btn:hover { background: #22bf5c; transform: translateY(-2px); }
+
+  .map-embed {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    overflow: hidden;
+    height: 280px;
+  }
+
+  .map-embed iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--text);
+    color: rgba(255,255,255,0.6);
+    padding: 40px 48px;
+    text-align: center;
+  }
+
+  footer .f-name {
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 900;
+    color: white;
+    margin-bottom: 8px;
+  }
+
+  footer p { font-size: 13px; line-height: 1.8; }
+  footer a { color: var(--sky); text-decoration: none; }
+
+  @media (max-width: 640px) {
+    footer { padding: 32px 20px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo">
+    <div class="logo-icon">👶</div>
+    <div class="logo-text">
+      Dra. Baudino
+      <span>Pediatría · Bahía Blanca</span>
+    </div>
+  </a>
+  <ul>
+    <li><a href="#sobre">Sobre mí</a></li>
+    <li><a href="#servicios">Servicios</a></li>
+    <li><a href="#coberturas">Coberturas</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+    <li><a href="https://wa.me/542915170370" class="nav-cta">Pedir turno</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-left">
+      <div class="hero-tag">👶 Pediatra · Bahía Blanca</div>
+      <h1>Salud y cuidado para tu <em>hijo</em>, desde el primer día</h1>
+      <p class="hero-tagline">Mamás, bebés y niños.<br>Aprender, desarrollar, crecer.</p>
+      <p class="hero-desc">Atención pediátrica desde el nacimiento hasta los 14 años, centrada en la familia. Con el objetivo de apoyar la salud, el crecimiento y la prevención de enfermedades en cada etapa de la infancia.</p>
+      <div class="hero-buttons">
+        <a href="https://wa.me/542915170370" class="btn-primary">💬 Pedir turno por WhatsApp</a>
+        <a href="#servicios" class="btn-secondary">Ver servicios</a>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="hero-card">
+        <div class="hc-top">
+          <div class="hc-avatar">👩‍⚕️</div>
+          <div>
+            <div class="hc-name">Dra. María Luján Baudino</div>
+            <div class="hc-role">Médica Pediatra · MP 2547</div>
+          </div>
+        </div>
+        <div class="hc-stats">
+          <div class="hc-stat">
+            <div class="st-num">+15</div>
+            <div class="st-label">Años de experiencia</div>
+          </div>
+          <div class="hc-stat">
+            <div class="st-num">0</div>
+            <div class="st-label">a 14 años atendidos</div>
+          </div>
+          <div class="hc-stat">
+            <div class="st-num">15+</div>
+            <div class="st-label">Obras sociales</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pill-row">
+        <span class="pill">✓ Recién nacidos</span>
+        <span class="pill">✓ Control de crecimiento</span>
+        <span class="pill coral">✓ Estimulación temprana</span>
+        <span class="pill coral">✓ Urgencias</span>
+        <span class="pill">✓ Vacunación</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOBRE MÍ -->
+<section id="sobre">
+  <div class="section-inner">
+    <div class="sobre-grid">
+      <div class="sobre-left">
+        <div class="section-label">Sobre mí</div>
+        <h2 class="section-title">Una pediatra que se toma el tiempo con cada paciente</h2>
+        <div class="sobre-quote">
+          "Juntos cuidaremos de ellos."
+        </div>
+        <p>Soy la Dra. María Luján Baudino, Médica Pediátrica recibida en la Universidad Nacional de Córdoba (2007). Desde entonces me dedico a la atención integral de niños y niñas desde el nacimiento hasta los 14 años en la ciudad de Bahía Blanca.</p>
+        <p>Mi enfoque está centrado en la familia: creo que acompañar a los padres con información clara y contención es tan importante como el tratamiento médico en sí. Cada consulta es un espacio de escucha, sin apuro.</p>
+        <div class="sobre-badges">
+          <div class="sobre-badge"><span>🎓</span> UNC — 2007</div>
+          <div class="sobre-badge"><span>📍</span> Blandengues 472</div>
+          <div class="sobre-badge"><span>🏥</span> Consultorio privado</div>
+          <div class="sobre-badge"><span>👶</span> 0 a 14 años</div>
+        </div>
+      </div>
+      <div class="sobre-right">
+        <div class="review-card">
+          <p>Excelente profesional. Te explica todo muy claramente y se toma el tiempo necesario con cada paciente.</p>
+          <div class="review-stars">★★★★★ — Paciente, 2019</div>
+        </div>
+        <div class="review-card">
+          <p>Por fin una profesional que dio con el diagnóstico y tratamiento de mi hijo después de deambular por varios pediatras. Es una genia.</p>
+          <div class="review-stars">★★★★★ — Mamá, 2017</div>
+        </div>
+        <div class="review-card">
+          <p>Me encantó la atención, la calidez y el profesionalismo de la Dra. Sin nada que mejorar.</p>
+          <div class="review-stars">★★★★★ — Paciente, 2017</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICIOS -->
+<section id="servicios">
+  <div class="section-inner">
+    <div class="section-label">Servicios</div>
+    <h2 class="section-title">¿En qué puedo ayudarte?</h2>
+    <p class="section-desc">Atención pediátrica completa, desde el primer control hasta la adolescencia.</p>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon">🤝</div>
+        <h3>Primera consulta</h3>
+        <p>Conocemos a tu hijo/a desde el principio. Revisamos su historia de salud, hacemos un examen completo y definimos juntos el plan de seguimiento.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">📈</div>
+        <h3>Control de crecimiento y desarrollo</h3>
+        <p>Seguimiento periódico del crecimiento físico, el desarrollo psicomotor y los hitos esperados según cada etapa de la infancia.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🗣️</div>
+        <h3>Estimulación temprana del lenguaje</h3>
+        <p>Detección y orientación temprana ante cualquier señal de alerta en el desarrollo del lenguaje, con derivación oportuna si fuera necesario.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🔄</div>
+        <h3>Consultas sucesivas</h3>
+        <p>Seguimiento de enfermedades agudas, revisión de tratamientos y control posterior a diagnósticos o internaciones.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">💉</div>
+        <h3>Vacunación</h3>
+        <p>Orientación y control del calendario nacional de vacunación obligatorio y vacunas adicionales recomendadas según la edad.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">👶</div>
+        <h3>Recién nacidos</h3>
+        <p>Atención especializada para los primeros días y semanas de vida: lactancia, sueño seguro, cuidados del cordón y señales de alerta.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OBRAS SOCIALES -->
+<section id="coberturas">
+  <div class="section-inner">
+    <div class="section-label">Coberturas</div>
+    <h2 class="section-title">Obras sociales y prepagas aceptadas</h2>
+    <p class="section-desc">Trabajo con las principales coberturas médicas de la región. También atiendo en forma particular.</p>
+    <div class="coberturas-wrap">
+      <div class="cobertura-pill">OSDE Binario</div>
+      <div class="cobertura-pill">Swiss Medical</div>
+      <div class="cobertura-pill">IOMA</div>
+      <div class="cobertura-pill">Galeno</div>
+      <div class="cobertura-pill">Medifé</div>
+      <div class="cobertura-pill">OMINT</div>
+      <div class="cobertura-pill">Jerárquicos Salud</div>
+      <div class="cobertura-pill">Sancor Salud</div>
+      <div class="cobertura-pill">Medicus</div>
+      <div class="cobertura-pill">Unión Personal</div>
+      <div class="cobertura-pill">IOSE</div>
+      <div class="cobertura-pill">COMEI</div>
+      <div class="cobertura-pill">DASUTeN</div>
+      <div class="cobertura-pill">AcaSalud</div>
+      <div class="cobertura-pill">Atención particular</div>
+    </div>
+    <p class="cobertura-note">¿No encontrás tu cobertura? Consultanos por WhatsApp y te confirmamos.</p>
+  </div>
+</section>
+
+<!-- TEMAS DE INTERÉS -->
+<section id="temas">
+  <div class="section-inner">
+    <div class="section-label">Información para padres</div>
+    <h2 class="section-title">Temas que como mamá o papá podés necesitar</h2>
+    <p class="section-desc">Información confiable sobre las situaciones más frecuentes de la infancia.</p>
+    <div class="temas-grid">
+      <div class="tema-item">Alimentación complementaria</div>
+      <div class="tema-item">Fiebre — cómo actuar</div>
+      <div class="tema-item">Bronquiolitis</div>
+      <div class="tema-item">Vacunación — calendario</div>
+      <div class="tema-item">Recién nacidos y sus cuidados</div>
+      <div class="tema-item">Sueño seguro del bebé</div>
+      <div class="tema-item">Cólicos del lactante</div>
+      <div class="tema-item">Dentición</div>
+      <div class="tema-item">Desarrollo psicomotor</div>
+      <div class="tema-item">Atragantamiento</div>
+      <div class="tema-item">Broncoespasmo</div>
+      <div class="tema-item">Laringitis</div>
+      <div class="tema-item">Golpe de calor</div>
+      <div class="tema-item">Pediculosis</div>
+      <div class="tema-item">Sinusitis</div>
+      <div class="tema-item">Protección rayos UV</div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto">
+  <div class="section-inner">
+    <div class="section-label">Contacto</div>
+    <h2 class="section-title">Pedí tu turno hoy</h2>
+    <p class="section-desc">Escribinos por WhatsApp y te respondemos a la brevedad para coordinar el día y horario que mejor te venga.</p>
+    <div class="contact-grid">
+      <div>
+        <div class="contact-item">
+          <div class="contact-icon">📍</div>
+          <div>
+            <div class="ci-label">Dirección</div>
+            <div class="ci-value">Blandengues 472, Bahía Blanca</div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">📞</div>
+          <div>
+            <div class="ci-label">Teléfono</div>
+            <div class="ci-value">291-517-0370</div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">👶</div>
+          <div>
+            <div class="ci-label">Pacientes</div>
+            <div class="ci-value">Niños de 0 a 14 años</div>
+          </div>
+        </div>
+        <a href="https://wa.me/542915170370?text=Hola%20Dra.%20Baudino%2C%20quisiera%20pedir%20un%20turno." class="whatsapp-btn">
+          💬 Escribir por WhatsApp
+        </a>
+      </div>
+      <div>
+        <div class="map-embed">
+          <iframe
+            src="https://www.google.com/maps?q=Blandengues+472,+Bahía+Blanca,+Buenos+Aires,+Argentina&output=embed"
+            allowfullscreen loading="lazy">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="f-name">Dra. María Luján Baudino — Pediatría</div>
+  <p>Blandengues 472 · Bahía Blanca, Buenos Aires · Tel: 291-517-0370</p>
+  <p style="margin-top:8px;">MP 2547 · Médica Pediátrica — Universidad Nacional de Córdoba</p>
+</footer>
+
+</body>
+</html>

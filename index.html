@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nexi AI — Desarrollo Web en Bahía Blanca</title>
+  <title>NexiAI — Software y Webs a Medida en Bahía Blanca</title>
   <link rel="icon" type="image/png" href="favicon.png" />
-  <meta name="description" content="Nexi AI diseña páginas web profesionales para negocios en Bahía Blanca. Webs rápidas, modernas y con mantenimiento mensual incluido si lo necesitás." />
+  <meta name="description" content="NexiAI crea software a medida y páginas web profesionales para negocios en Bahía Blanca. Soluciones rápidas, modernas y hechas para tu forma de trabajar." />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -20,10 +20,10 @@
       --gray2:    #374151;
     }
 
-    html { scroll-behavior: smooth; }
+    html { scroll-behavior: smooth; background: var(--bg); }
 
     body {
-      background: var(--bg);
+      background: transparent;
       color: var(--white);
       font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
       line-height: 1.6;
@@ -310,6 +310,91 @@
     .footer-links a:hover { color: var(--green); }
     .footer-copy { color: var(--gray); font-size: .8rem; }
 
+    /* ── FX FUTURISTA ── */
+
+    /* Barra de progreso de scroll */
+    .progress-bar {
+      position: fixed; top: 0; left: 0; height: 3px; width: 0%;
+      background: linear-gradient(90deg, var(--green), #16a34a, var(--green));
+      z-index: 200; box-shadow: 0 0 14px rgba(74,222,128,.7);
+    }
+
+    /* Fondo: grilla animada + auroras de luz */
+    .bg-fx { position: fixed; inset: 0; z-index: -1; overflow: hidden; pointer-events: none; }
+    .bg-grid {
+      position: absolute; inset: -50%;
+      background-image:
+        linear-gradient(rgba(74,222,128,.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(74,222,128,.05) 1px, transparent 1px);
+      background-size: 50px 50px;
+      -webkit-mask-image: radial-gradient(ellipse 70% 60% at 50% 25%, #000 0%, transparent 75%);
+      mask-image: radial-gradient(ellipse 70% 60% at 50% 25%, #000 0%, transparent 75%);
+      animation: gridmove 22s linear infinite;
+    }
+    @keyframes gridmove { from { transform: translateY(0); } to { transform: translateY(50px); } }
+    .aurora { position: absolute; border-radius: 50%; filter: blur(90px); opacity: .55; }
+    .aurora.a1 { width: 480px; height: 480px; background: rgba(74,222,128,.20); top: -130px; left: -110px; animation: float1 15s ease-in-out infinite; }
+    .aurora.a2 { width: 420px; height: 420px; background: rgba(34,197,94,.15); top: 35%; right: -130px; animation: float2 19s ease-in-out infinite; }
+    .aurora.a3 { width: 360px; height: 360px; background: rgba(16,185,129,.12); bottom: -130px; left: 28%; animation: float1 17s ease-in-out infinite reverse; }
+    @keyframes float1 { 0%,100% { transform: translate(0,0); } 50% { transform: translate(45px,-35px); } }
+    @keyframes float2 { 0%,100% { transform: translate(0,0); } 50% { transform: translate(-55px,45px); } }
+
+    /* Título con gradiente animado (brillo que se mueve) */
+    h1 em {
+      background: linear-gradient(90deg, #4ADE80, #a7f3d0, #22c55e, #4ADE80);
+      background-size: 250% auto;
+      -webkit-background-clip: text; background-clip: text;
+      -webkit-text-fill-color: transparent; color: transparent;
+      animation: shimmer 5s linear infinite;
+    }
+    @keyframes shimmer { to { background-position: 250% center; } }
+
+    /* Entrada animada del hero al cargar */
+    .hero > * { opacity: 0; transform: translateY(26px); animation: heroIn .85s cubic-bezier(.2,.7,.2,1) forwards; }
+    .hero-badge   { animation-delay: .10s; }
+    .hero h1      { animation-delay: .25s; }
+    .hero-sub     { animation-delay: .42s; }
+    .hero-actions { animation-delay: .58s; }
+    .hero-stats   { animation-delay: .74s; }
+    @keyframes heroIn { to { opacity: 1; transform: translateY(0); } }
+
+    /* Botón principal con destello que cruza */
+    .btn-primary { position: relative; overflow: hidden; }
+    .btn-primary::after {
+      content: ''; position: absolute; top: 0; left: -120%; width: 55%; height: 100%;
+      background: linear-gradient(120deg, transparent, rgba(255,255,255,.5), transparent);
+      transform: skewX(-20deg); transition: left .65s ease;
+    }
+    .btn-primary:hover::after { left: 140%; }
+
+    /* Tarjetas: brillo que sigue al mouse */
+    .service-card::after {
+      content: ''; position: absolute; inset: 0; border-radius: inherit; z-index: 0;
+      background: radial-gradient(200px circle at var(--mx,50%) var(--my,50%), rgba(74,222,128,.14), transparent 60%);
+      opacity: 0; transition: opacity .3s; pointer-events: none;
+    }
+    .service-card:hover::after { opacity: 1; }
+    .service-card > * { position: relative; z-index: 1; }
+
+    /* Cinta de servicios en movimiento */
+    .marquee { overflow: hidden; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); background: var(--bg2); padding: .85rem 0; }
+    .marquee-track { display: flex; align-items: center; white-space: nowrap; width: max-content; animation: scroll-x 30s linear infinite; }
+    .marquee-track span { color: var(--gray); font-size: .85rem; letter-spacing: .1em; text-transform: uppercase; padding: 0 1.9rem; position: relative; }
+    .marquee-track span::after { content: '◆'; color: var(--green); font-size: .5rem; position: absolute; right: -4px; top: 50%; transform: translateY(-50%); }
+    .marquee:hover .marquee-track { animation-play-state: paused; }
+    @keyframes scroll-x { to { transform: translateX(-50%); } }
+
+    /* Revelado suave al hacer scroll */
+    .reveal { opacity: 0; transform: translateY(32px); transition: opacity .7s ease, transform .7s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+
+    /* Si el usuario prefiere menos movimiento, se respeta */
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation: none !important; }
+      .reveal { opacity: 1 !important; transform: none !important; }
+      .hero > * { opacity: 1 !important; transform: none !important; }
+    }
+
     /* ── RESPONSIVE ── */
     @media (max-width: 768px) {
       nav { padding: 1rem; }
@@ -326,11 +411,21 @@
 </head>
 <body>
 
+<!-- FONDO ANIMADO -->
+<div class="bg-fx">
+  <div class="bg-grid"></div>
+  <div class="aurora a1"></div>
+  <div class="aurora a2"></div>
+  <div class="aurora a3"></div>
+</div>
+<div class="progress-bar"></div>
+
 <!-- NAV -->
 <nav>
   <a href="#" class="nav-logo">nexi<span>.</span></a>
   <ul class="nav-links">
     <li><a href="#servicios">Servicios</a></li>
+    <li><a href="#trabajos">Trabajos</a></li>
     <li><a href="#precios">Precios</a></li>
     <li><a href="#faqs">FAQ</a></li>
     <li><a href="#nosotros">Nosotros</a></li>
@@ -342,10 +437,10 @@
 <!-- HERO -->
 <section class="hero">
   <div class="hero-badge">Bahía Blanca, Argentina</div>
-  <h1>Tu negocio merece una <em>web que venda</em></h1>
+  <h1>Software a medida para <em>hacer crecer tu negocio</em></h1>
   <p class="hero-sub">
-    Diseñamos páginas web profesionales para negocios locales. Rápidas, modernas
-    y con soporte mensual si lo necesitás.
+    Creamos software y páginas web a medida para negocios locales. Soluciones
+    rápidas, modernas y pensadas para tu forma de trabajar.
   </p>
   <div class="hero-actions">
     <a href="#servicios" class="btn-primary">Ver servicios</a>
@@ -358,7 +453,7 @@
     </div>
     <div class="stat">
       <div class="stat-num">rápido</div>
-      <div class="stat-label">Entrega en días</div>
+      <div class="stat-label">Entrega en ~2 semanas</div>
     </div>
     <div class="stat">
       <div class="stat-num">local</div>
@@ -367,15 +462,36 @@
   </div>
 </section>
 
+<!-- CINTA DE SERVICIOS -->
+<div class="marquee">
+  <div class="marquee-track">
+    <span>Software a medida</span><span>Páginas web</span><span>Sistemas de gestión</span><span>CRM</span><span>Apps web</span><span>Automatizaciones</span><span>Landing pages</span><span>Integraciones</span><span>Paneles de control</span>
+    <span>Software a medida</span><span>Páginas web</span><span>Sistemas de gestión</span><span>CRM</span><span>Apps web</span><span>Automatizaciones</span><span>Landing pages</span><span>Integraciones</span><span>Paneles de control</span>
+  </div>
+</div>
+
 <!-- SERVICIOS -->
 <section id="servicios">
   <div class="container">
     <div class="services-header">
       <div class="section-label">Servicios</div>
       <h2 class="section-title">Simple y directo</h2>
-      <p class="section-sub">Hacemos tu web y si necesitás que esté siempre actualizada, nos encargamos nosotros.</p>
+      <p class="section-sub">Hacemos tu web, creamos el software a medida que tu negocio necesita, y si querés, nos encargamos del mantenimiento.</p>
     </div>
-    <div class="services-grid" style="grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); max-width: 800px; margin: 0 auto;">
+    <div class="services-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+
+      <div class="service-card">
+        <div class="service-icon">💻</div>
+        <div class="service-name">Software a Medida</div>
+        <p class="service-desc">¿Tu negocio necesita una herramienta que no existe? La creamos a tu medida: sistemas de gestión, paneles y apps pensadas para tu forma de trabajar.</p>
+        <ul class="service-list">
+          <li>Sistemas de gestión y paneles de control</li>
+          <li>CRM y seguimiento de clientes</li>
+          <li>Aplicaciones web a tu medida</li>
+          <li>Integraciones y automatizaciones</li>
+          <li>Desarrollado con IA, entregado rápido</li>
+        </ul>
+      </div>
 
       <div class="service-card">
         <div class="service-icon">🌐</div>
@@ -406,22 +522,79 @@
   </div>
 </section>
 
+<!-- TRABAJOS -->
+<section id="trabajos">
+  <div class="container">
+    <div class="services-header">
+      <div class="section-label">Trabajos</div>
+      <h2 class="section-title">Algunos de nuestros trabajos</h2>
+      <p class="section-sub">Webs reales que diseñamos para negocios locales. Tocá "Ver demo" para abrirlas.</p>
+    </div>
+    <div class="services-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+
+      <div class="service-card" style="padding:0; overflow:hidden;">
+        <div style="height:150px; background:linear-gradient(135deg, #0d1a0f, #143d24); display:flex; align-items:center; justify-content:center; font-size:3rem; border-bottom:1px solid var(--border);">🦷</div>
+        <div style="padding:1.75rem;">
+          <div style="font-size:.72rem; color:var(--green); text-transform:uppercase; letter-spacing:.1em; margin-bottom:.4rem;">Odontología</div>
+          <div class="service-name">Consultorio Dr. Benítez</div>
+          <p class="service-desc">Landing para un consultorio odontológico, pensada para que los pacientes pidan turno directo por WhatsApp.</p>
+          <a href="trabajos/benitez-dentista.html" target="_blank" class="btn-outline" style="display:inline-block; margin-top:1.25rem; padding:.55rem 1.4rem; font-size:.85rem;">Ver demo →</a>
+        </div>
+      </div>
+
+      <div class="service-card" style="padding:0; overflow:hidden;">
+        <div style="height:150px; background:linear-gradient(135deg, #0d1a0f, #143d24); display:flex; align-items:center; justify-content:center; font-size:3rem; border-bottom:1px solid var(--border);">🦷</div>
+        <div style="padding:1.75rem;">
+          <div style="font-size:.72rem; color:var(--green); text-transform:uppercase; letter-spacing:.1em; margin-bottom:.4rem;">Odontología</div>
+          <div class="service-name">Consultorio Dr. Cáceres</div>
+          <p class="service-desc">Web profesional para un odontólogo, con sus servicios, ubicación y contacto rápido.</p>
+          <a href="trabajos/caceres-dentista.html" target="_blank" class="btn-outline" style="display:inline-block; margin-top:1.25rem; padding:.55rem 1.4rem; font-size:.85rem;">Ver demo →</a>
+        </div>
+      </div>
+
+      <div class="service-card" style="padding:0; overflow:hidden;">
+        <div style="height:150px; background:linear-gradient(135deg, #0d1a0f, #143d24); display:flex; align-items:center; justify-content:center; font-size:3rem; border-bottom:1px solid var(--border);">🦷</div>
+        <div style="padding:1.75rem;">
+          <div style="font-size:.72rem; color:var(--green); text-transform:uppercase; letter-spacing:.1em; margin-bottom:.4rem;">Odontología</div>
+          <div class="service-name">Consultorio Dr. Prieto</div>
+          <p class="service-desc">Landing clara y moderna para un consultorio dental, lista para captar nuevos pacientes.</p>
+          <a href="trabajos/prieto-dentista.html" target="_blank" class="btn-outline" style="display:inline-block; margin-top:1.25rem; padding:.55rem 1.4rem; font-size:.85rem;">Ver demo →</a>
+        </div>
+      </div>
+
+      <div class="service-card" style="padding:0; overflow:hidden;">
+        <div style="height:150px; background:linear-gradient(135deg, #0d1a0f, #143d24); display:flex; align-items:center; justify-content:center; font-size:3rem; border-bottom:1px solid var(--border);">🩺</div>
+        <div style="padding:1.75rem;">
+          <div style="font-size:.72rem; color:var(--green); text-transform:uppercase; letter-spacing:.1em; margin-bottom:.4rem;">Pediatría</div>
+          <div class="service-name">Dr. Baudino — Pediatra</div>
+          <p class="service-desc">Web pensada para un pediatra: cálida, confiable y fácil de usar para que los papás reserven consulta.</p>
+          <a href="trabajos/baudino-pediatra.html" target="_blank" class="btn-outline" style="display:inline-block; margin-top:1.25rem; padding:.55rem 1.4rem; font-size:.85rem;">Ver demo →</a>
+        </div>
+      </div>
+
+    </div>
+    <p style="text-align:center; color:var(--gray); font-size:.9rem; margin-top:2.5rem;">
+      ¿Querés ver tu negocio así? <a href="#contacto" style="color:var(--green); text-decoration:none; font-weight:600;">Escribinos →</a>
+    </p>
+  </div>
+</section>
+
 <!-- PROCESO -->
 <section id="proceso">
   <div class="container">
     <div class="section-label">¿Cómo trabajamos?</div>
     <h2 class="section-title">Simple, directo y sin vueltas</h2>
-    <p class="section-sub">Cuatro pasos para que tu proyecto esté en marcha en el menor tiempo posible.</p>
+    <p class="section-sub">Cuatro pasos para poner en marcha tu web o software, sin vueltas y en el menor tiempo posible.</p>
     <div class="proceso-grid">
       <div class="proceso-step">
         <div class="proceso-num">01</div>
         <h3>Consulta inicial</h3>
-        <p>Entendemos tu negocio, tus necesidades y qué querés lograr.</p>
+        <p>Entendemos tu negocio, tus necesidades y qué problema querés resolver, sea una web o un software.</p>
       </div>
       <div class="proceso-step">
         <div class="proceso-num">02</div>
-        <h3>Propuesta</h3>
-        <p>Te presentamos una propuesta clara: qué hacemos, cómo y en cuánto tiempo.</p>
+        <h3>Propuesta y presupuesto</h3>
+        <p>Te presentamos una propuesta clara con su presupuesto: qué hacemos, cómo y en cuánto tiempo.</p>
       </div>
       <div class="proceso-step">
         <div class="proceso-num">03</div>
@@ -443,9 +616,24 @@
     <div class="services-header">
       <div class="section-label">Precios</div>
       <h2 class="section-title">Sin sorpresas</h2>
-      <p class="section-sub">Precios claros desde el principio. Hosting y dominio incluidos el primer año.</p>
+      <p class="section-sub">Precios claros para tu web. Para el software a medida, armamos un presupuesto según lo que tu negocio necesita.</p>
     </div>
     <div class="services-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); margin-top: 3rem;">
+
+      <div class="service-card">
+        <div class="service-icon">💻</div>
+        <div class="service-name">Software a Medida</div>
+        <div style="font-size:2.2rem;font-weight:700;color:var(--green);margin:.5rem 0;letter-spacing:-1px;">A medida</div>
+        <p class="service-desc">Cada proyecto es único. Armamos un presupuesto según lo que necesitás, sin que pagues por lo que no usás.</p>
+        <ul class="service-list">
+          <li>Presupuesto según tu proyecto</li>
+          <li>Primera reunión sin costo</li>
+          <li>Sistemas, paneles, CRM o apps</li>
+          <li>Integraciones y automatizaciones</li>
+          <li>Pagos en etapas</li>
+        </ul>
+        <a href="#contacto" class="btn-outline" style="display:inline-block;margin-top:1.25rem;padding:.55rem 1.4rem;font-size:.85rem;">Pedir presupuesto →</a>
+      </div>
 
       <div class="service-card">
         <div class="service-icon">📄</div>
@@ -457,7 +645,7 @@
           <li>Diseño responsive</li>
           <li>SEO básico incluido</li>
           <li>Hosting y dominio 1er año</li>
-          <li>Entrega en 5-7 días</li>
+          <li>Entrega en hasta 2 semanas</li>
         </ul>
       </div>
 
@@ -473,7 +661,7 @@
           <li>SEO básico incluido</li>
           <li>Formulario de contacto</li>
           <li>Hosting y dominio 1er año</li>
-          <li>Entrega en 7-10 días</li>
+          <li>Entrega en hasta 2 semanas</li>
         </ul>
       </div>
 
@@ -507,7 +695,7 @@
           ¿Cuánto tarda en estar lista mi web?
           <span style="color:var(--green);font-size:1.2rem;">+</span>
         </summary>
-        <p style="margin-top:.75rem;color:var(--gray);font-size:.9rem;line-height:1.6;">Landing Page: 5 a 7 días hábiles. Web Institucional: 7 a 10 días hábiles. Los tiempos arrancan una vez que nos mandás el contenido (logo, textos, fotos).</p>
+        <p style="margin-top:.75rem;color:var(--gray);font-size:.9rem;line-height:1.6;">Por lo general, en hasta dos semanas. Y si la entregamos antes, mejor. Los tiempos arrancan una vez que nos mandás el contenido (logo, textos, fotos).</p>
       </details>
 
       <details style="background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:1.25rem 1.5rem;cursor:pointer;">
@@ -523,7 +711,7 @@
           ¿Cómo es el pago?
           <span style="color:var(--green);font-size:1.2rem;">+</span>
         </summary>
-        <p style="margin-top:.75rem;color:var(--gray);font-size:.9rem;line-height:1.6;">50% al inicio para arrancar el proyecto, 50% restante al aprobar la versión final antes de publicar. Aceptamos transferencia bancaria y Mercado Pago.</p>
+        <p style="margin-top:.75rem;color:var(--gray);font-size:.9rem;line-height:1.6;">50% al inicio para arrancar el proyecto, 50% restante al aprobar la versión final antes de publicar. Aceptamos todos los medios de pago: efectivo, transferencia, dólares (USD) y USDT.</p>
       </details>
 
       <details style="background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:1.25rem 1.5rem;cursor:pointer;">
@@ -553,8 +741,8 @@
       <div class="nosotros-text">
         <div class="section-label">Nosotros</div>
         <h2 class="section-title">Una agencia local que entiende tu negocio</h2>
-        <p class="section-sub">Somos Nexi AI, una agencia de desarrollo web con base en Bahía Blanca.</p>
-        <p>Nos especializamos en hacer webs para negocios locales — sin vueltas, sin tecnicismos, a un precio justo. Hablás directamente con quien hace el trabajo.</p>
+        <p class="section-sub">Somos NexiAI, desarrollo de software y webs a medida con base en Bahía Blanca.</p>
+        <p>Creamos software a medida y páginas web para negocios locales — sin vueltas, sin tecnicismos, a un precio justo. Hablás directamente con quien hace el trabajo.</p>
         <p>Conocemos la realidad de los negocios de Bahía Blanca y construimos soluciones que realmente funcionan.</p>
         <div class="nosotros-values">
           <div class="value">
@@ -583,7 +771,7 @@
       <div class="nosotros-visual">
         <div class="logo-big">
           <div class="logo-text">nexi<span>.</span></div>
-          <div class="logo-sub">Diseño Web</div>
+          <div class="logo-sub">Software &amp; Web</div>
         </div>
       </div>
     </div>
@@ -626,45 +814,53 @@
     <div class="footer-logo">nexi<span>.</span> <small style="color:var(--gray);font-size:.7rem;letter-spacing:.15em;text-transform:uppercase;">Agencia IA</small></div>
     <div class="footer-links">
       <a href="#servicios">Servicios</a>
+      <a href="#trabajos">Trabajos</a>
       <a href="#precios">Precios</a>
       <a href="#faqs">FAQ</a>
       <a href="#nosotros">Nosotros</a>
       <a href="#contacto">Contacto</a>
     </div>
-    <div class="footer-copy">© 2026 Nexi AI · Bahía Blanca, Argentina</div>
+    <div class="footer-copy">© 2026 NexiAI · Bahía Blanca, Argentina</div>
   </div>
 </footer>
 
 <script>
-  function handleSubmit(e) {
-    e.preventDefault();
-    const btn = e.target.querySelector('.btn-submit');
-    btn.textContent = '✓ Mensaje enviado';
-    btn.style.background = '#22c55e';
-    btn.disabled = true;
-    setTimeout(() => {
-      btn.textContent = 'Enviar mensaje →';
-      btn.style.background = '';
-      btn.disabled = false;
-      e.target.reset();
-    }, 3000);
-  }
+  // Barra de progreso de scroll
+  const bar = document.querySelector('.progress-bar');
+  const onScroll = () => {
+    const h = document.documentElement;
+    const max = h.scrollHeight - h.clientHeight;
+    const pct = max > 0 ? (h.scrollTop / max) * 100 : 0;
+    if (bar) bar.style.width = pct + '%';
+  };
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
 
-  // Smooth reveal on scroll
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(e => {
+  // Brillo que sigue al mouse en las tarjetas
+  document.querySelectorAll('.service-card').forEach(card => {
+    card.addEventListener('mousemove', e => {
+      const r = card.getBoundingClientRect();
+      card.style.setProperty('--mx', (e.clientX - r.left) + 'px');
+      card.style.setProperty('--my', (e.clientY - r.top) + 'px');
+    });
+  });
+
+  // Revelado suave al hacer scroll (con leve escalonado)
+  const revObs = new IntersectionObserver((entries) => {
+    entries.forEach((e, i) => {
       if (e.isIntersecting) {
-        e.target.style.opacity = '1';
-        e.target.style.transform = 'translateY(0)';
+        e.target.style.transitionDelay = Math.min(i * 60, 240) + 'ms';
+        e.target.classList.add('visible');
+        revObs.unobserve(e.target);
       }
     });
-  }, { threshold: 0.1 });
+  }, { threshold: 0.12 });
 
-  document.querySelectorAll('.service-card, .proceso-step, .value').forEach(el => {
-    el.style.opacity = '0';
-    el.style.transform = 'translateY(20px)';
-    el.style.transition = 'opacity .5s ease, transform .5s ease';
-    observer.observe(el);
+  document.querySelectorAll(
+    '.service-card, .proceso-step, .value, .section-label, .section-title, .section-sub'
+  ).forEach(el => {
+    el.classList.add('reveal');
+    revObs.observe(el);
   });
 </script>
 

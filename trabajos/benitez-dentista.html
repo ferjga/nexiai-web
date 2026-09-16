@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dr. Jorge Benítez | Cirujano Dental en Bahía Blanca</title>
+  <meta name="description" content="Consultorio del Dr. Jorge H. Benítez en Bahía Blanca. Especialista en cirugía dental e implantes. Viamonte 146. Pedí tu turno hoy."/>
+  <meta name="keywords" content="cirujano dental Bahía Blanca, implantes dentales Bahía Blanca, Dr Benítez dentista, extracción muela Bahía Blanca, cirugía oral"/>
+  <meta name="robots" content="index, follow"/>
+  <meta property="og:title" content="Dr. Jorge Benítez | Cirugía Dental e Implantes en Bahía Blanca"/>
+  <meta property="og:description" content="Especialista en cirugía dental e implantes en Bahía Blanca. +15 reseñas con 9.4/10."/>
+  <meta property="og:type" content="business.business"/>
+  <meta property="og:locale" content="es_AR"/>
+  <link rel="canonical" href="https://benitez-dental.vercel.app/"/>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Dentist","name":"Dr. Jorge H. Benítez – Cirugía Dental","address":{"@type":"PostalAddress","streetAddress":"Viamonte 146, Consultorio 2","addressLocality":"Bahía Blanca","addressRegion":"Buenos Aires","addressCountry":"AR"},"telephone":"+542915323467","priceRange":"$$"}
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{--navy:#0A1628;--navy2:#0F2040;--blue:#1E40AF;--blue2:#2563EB;--blue-light:#DBEAFE;--gold:#D4A017;--white:#FFFFFF;--light:#F8FAFF;--gray:#64748B;--radius:14px}
+    html{scroll-behavior:smooth}
+    body{font-family:'Sora',sans-serif;background:var(--white);color:var(--navy);line-height:1.6}
+
+    nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(10,22,40,0.96);backdrop-filter:blur(14px);padding:0 5%;height:66px;display:flex;align-items:center;justify-content:space-between}
+    .logo{font-size:1rem;font-weight:800;color:var(--white);text-decoration:none;letter-spacing:.01em}
+    .logo span{color:#60A5FA}
+    .nav-links{display:flex;gap:26px;list-style:none}
+    .nav-links a{color:rgba(255,255,255,0.6);text-decoration:none;font-size:0.85rem;font-weight:500;transition:color .2s}
+    .nav-links a:hover{color:white}
+    .nav-btn{background:#2563EB;color:white;padding:9px 22px;border-radius:6px;text-decoration:none;font-size:0.85rem;font-weight:700;transition:all .2s}
+    .nav-btn:hover{background:#1D4ED8}
+    @media(max-width:768px){.nav-links{display:none}}
+
+    .hero{min-height:100vh;padding:100px 5% 80px;display:flex;align-items:center;background:linear-gradient(160deg,var(--navy) 0%,var(--navy2) 50%,#0D1F3C 100%);position:relative;overflow:hidden}
+    .hero::before{content:'';position:absolute;top:0;right:0;width:50%;height:100%;background:linear-gradient(to left,rgba(37,99,235,0.06),transparent)}
+    .grid-lines{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,0.02) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.02) 1px,transparent 1px);background-size:60px 60px}
+    .hero-inner{max-width:1100px;margin:0 auto;width:100%;display:grid;grid-template-columns:1.1fr 0.9fr;gap:70px;align-items:center;position:relative;z-index:1}
+    .badge{display:inline-flex;align-items:center;gap:8px;background:rgba(37,99,235,0.15);border:1px solid rgba(37,99,235,0.4);color:#93C5FD;padding:6px 16px;border-radius:4px;font-size:0.78rem;font-weight:700;margin-bottom:22px;letter-spacing:.06em;text-transform:uppercase}
+    h1{font-size:clamp(2.2rem,3.8vw,3.3rem);font-weight:800;line-height:1.1;color:white;margin-bottom:18px}
+    h1 span{color:#60A5FA}
+    .desc{color:rgba(255,255,255,0.6);font-size:1rem;margin-bottom:34px;max-width:460px;font-weight:300}
+    .actions{display:flex;gap:12px;flex-wrap:wrap}
+    .btn-blue{background:#2563EB;color:white;padding:14px 28px;border-radius:6px;text-decoration:none;font-weight:700;font-size:0.92rem;display:inline-flex;align-items:center;gap:8px;transition:all .2s}
+    .btn-blue:hover{background:#1D4ED8;transform:translateY(-2px)}
+    .btn-outline{background:transparent;border:1px solid rgba(255,255,255,0.2);color:white;padding:14px 26px;border-radius:6px;text-decoration:none;font-size:0.92rem;font-weight:500;transition:all .2s}
+    .btn-outline:hover{border-color:rgba(255,255,255,0.5)}
+    .stats{display:flex;gap:40px;margin-top:44px;padding-top:36px;border-top:1px solid rgba(255,255,255,0.08)}
+    .stat strong{display:block;font-size:1.9rem;font-weight:800;color:#60A5FA}
+    .stat span{font-size:0.78rem;color:rgba(255,255,255,0.45)}
+
+    .hero-panel{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:var(--radius);overflow:hidden}
+    .panel-header{background:rgba(37,99,235,0.2);border-bottom:1px solid rgba(255,255,255,0.06);padding:16px 20px;display:flex;align-items:center;justify-content:space-between}
+    .panel-header strong{font-size:0.85rem;color:white;font-weight:700}
+    .panel-badge{background:#2563EB;color:white;font-size:0.72rem;font-weight:700;padding:3px 10px;border-radius:4px}
+    .panel-body{padding:20px}
+    .panel-row{display:flex;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid rgba(255,255,255,0.04)}
+    .panel-row:last-child{border-bottom:none}
+    .pr-icon{width:32px;height:32px;background:rgba(37,99,235,0.15);border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:0.9rem;flex-shrink:0}
+    .pr-text strong{display:block;font-size:0.85rem;color:white;font-weight:600}
+    .pr-text span{font-size:0.76rem;color:rgba(255,255,255,0.45)}
+    .stars-gold{color:var(--gold);font-size:0.85rem}
+    @media(max-width:768px){.hero-inner{grid-template-columns:1fr}.hero-panel{display:none}}
+
+    section{padding:88px 5%}
+    .lbl{text-align:center;color:var(--blue2);font-size:0.75rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;margin-bottom:10px}
+    h2{text-align:center;font-size:clamp(1.8rem,3vw,2.5rem);font-weight:800;margin-bottom:12px}
+    .sub{text-align:center;color:var(--gray);font-size:0.97rem;max-width:500px;margin:0 auto 52px}
+
+    .servicios{background:var(--light)}
+    .sgrid{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+    .sc{background:white;border-radius:var(--radius);padding:28px 22px;border:1px solid #E2E8F0;transition:all .2s;position:relative;overflow:hidden}
+    .sc::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--blue2),#60A5FA);opacity:0;transition:opacity .2s}
+    .sc:hover{border-color:#BFDBFE;transform:translateY(-3px);box-shadow:0 8px 28px rgba(37,99,235,0.08)}
+    .sc:hover::before{opacity:1}
+    .si{width:46px;height:46px;background:var(--blue-light);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.3rem;margin-bottom:14px}
+    .sc h3{font-size:0.98rem;font-weight:700;margin-bottom:8px}
+    .sc p{font-size:0.83rem;color:var(--gray);line-height:1.6}
+
+    .porque{background:white}
+    .pinner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+    .plist{list-style:none;display:flex;flex-direction:column;gap:18px}
+    .pitem{display:flex;gap:14px;align-items:flex-start;padding:18px;background:var(--light);border-radius:var(--radius);border-left:3px solid var(--blue2)}
+    .pitem h4{font-size:0.95rem;font-weight:700;margin-bottom:4px}
+    .pitem p{font-size:0.83rem;color:var(--gray)}
+    .pvisual{background:linear-gradient(160deg,var(--navy),var(--navy2));border-radius:24px;padding:44px 32px;color:white;text-align:center}
+    .pbig{font-size:5rem;font-weight:800;color:#60A5FA;line-height:1}
+    .pvisual p{color:rgba(255,255,255,0.6);font-size:0.9rem;margin:8px 0 24px}
+    .pdiv{height:1px;background:rgba(255,255,255,0.08);margin:20px 0}
+    .pfacts{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    .pfacts strong{display:block;font-size:1.6rem;font-weight:800;color:#60A5FA}
+    .pfacts span{font-size:0.76rem;color:rgba(255,255,255,0.5)}
+    @media(max-width:768px){.pinner{grid-template-columns:1fr}}
+
+    .testimonios{background:var(--light)}
+    .tgrid{max-width:1000px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+    .tcard{background:white;border-radius:var(--radius);padding:26px;border:1px solid #E2E8F0}
+    .th{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
+    .tstars{color:var(--gold)}
+    .tbadge{background:var(--blue-light);color:var(--blue2);font-size:0.72rem;font-weight:700;padding:3px 10px;border-radius:4px}
+    .ttext{font-size:0.9rem;color:var(--gray);font-style:italic;line-height:1.7;margin-bottom:14px}
+    .tautor{font-size:0.82rem;font-weight:700;color:var(--navy)}
+
+    .contacto{background:var(--navy);color:white}
+    .contacto h2{color:white}
+    .contacto .lbl{color:#60A5FA}
+    .contacto .sub{color:rgba(255,255,255,0.5)}
+    .cinner{max-width:900px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:48px}
+    .cinfo{display:flex;flex-direction:column;gap:20px}
+    .ci{display:flex;gap:14px;align-items:flex-start}
+    .ci-ico{width:40px;height:40px;min-width:40px;background:rgba(37,99,235,0.15);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:1rem}
+    .ci h4{font-size:0.76rem;color:rgba(255,255,255,0.4);margin-bottom:2px;text-transform:uppercase;letter-spacing:.06em}
+    .ci p{font-size:0.92rem;color:white;font-weight:600}
+    .cform{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:var(--radius);padding:28px;display:flex;flex-direction:column;gap:12px}
+    .cform input,.cform select{background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:8px;padding:12px 14px;color:white;font-size:0.87rem;font-family:'Sora',sans-serif;outline:none;transition:border-color .2s;width:100%}
+    .cform input::placeholder{color:rgba(255,255,255,0.3)}
+    .cform input:focus,.cform select:focus{border-color:var(--blue2)}
+    .cform select option{background:var(--navy2)}
+    .btn-wa{background:#25D366;color:white;padding:14px;border-radius:8px;font-weight:700;font-size:0.9rem;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;text-decoration:none;transition:all .2s;font-family:'Sora',sans-serif}
+    .btn-wa:hover{background:#1fba58;transform:translateY(-2px)}
+    @media(max-width:768px){.cinner{grid-template-columns:1fr}}
+
+    footer{background:#060E1A;text-align:center;padding:22px 5%;color:rgba(255,255,255,0.3);font-size:0.78rem}
+    footer strong{color:#60A5FA}
+  </style>
+</head>
+<body>
+<nav>
+  <a href="#" class="logo">Dr. <span>Benítez</span> · Cirugía Dental</a>
+  <ul class="nav-links"><li><a href="#servicios">Servicios</a></li><li><a href="#nosotros">Nosotros</a></li><li><a href="#opiniones">Opiniones</a></li><li><a href="#contacto">Contacto</a></li></ul>
+  <a href="#contacto" class="nav-btn">Pedir turno</a>
+</nav>
+
+<section class="hero" id="inicio">
+  <div class="grid-lines"></div>
+  <div class="hero-inner">
+    <div>
+      <div class="badge">⚕️ Cirugía Dental · Bahía Blanca</div>
+      <h1>Especialista en <span>implantes y cirugía</span> oral</h1>
+      <p class="desc">Extracciones complejas, implantes y cirugía oral con técnica precisa y más de 15 pacientes que lo recomiendan.</p>
+      <div class="actions">
+        <a href="https://wa.me/5492915323467?text=Hola%20Dr.%20Ben%C3%ADtez%2C%20quiero%20pedir%20un%20turno" class="btn-blue" target="_blank">📅 Pedir turno</a>
+        <a href="#servicios" class="btn-outline">Ver servicios</a>
+      </div>
+      <div class="stats">
+        <div class="stat"><strong>9.4</strong><span>Puntaje Google</span></div>
+        <div class="stat"><strong>+15</strong><span>Reseñas reales</span></div>
+        <div class="stat"><strong>Implantes</strong><span>Especialidad</span></div>
+      </div>
+    </div>
+    <div>
+      <div class="hero-panel">
+        <div class="panel-header"><strong>Dr. Jorge H. Benítez</strong><span class="panel-badge">Cirujano Dental</span></div>
+        <div class="panel-body">
+          <div class="panel-row"><div class="pr-icon">🦺</div><div class="pr-text"><strong>Implantes dentales</strong><span>Planificación integral, resultados naturales</span></div></div>
+          <div class="panel-row"><div class="pr-icon">⚕️</div><div class="pr-text"><strong>Cirugía oral</strong><span>Extracciones complejas con mínima molestia</span></div></div>
+          <div class="panel-row"><div class="pr-icon">🔬</div><div class="pr-text"><strong>Alta resolución técnica</strong><span>Casos complejos resueltos en sesión única</span></div></div>
+          <div style="margin-top:14px;padding-top:14px;border-top:1px solid rgba(255,255,255,0.06)">
+            <div class="stars-gold">★★★★★</div>
+            <p style="font-size:0.82rem;color:rgba(255,255,255,0.55);margin-top:6px;font-style:italic">"Me sacó la muela del juicio en minutos. Sin dolor y sin complicaciones. Increíble."</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="servicios" id="servicios">
+  <div class="lbl">Especialidades</div>
+  <h2>Soluciones para casos complejos</h2>
+  <p class="sub">Cirugía oral e implantología con técnica probada y resultados que duran.</p>
+  <div class="sgrid">
+    <div class="sc"><div class="si">🦺</div><h3>Implantes dentales</h3><p>Reemplazá piezas perdidas con implantes de titanio. Planificación completa y seguimiento post-operatorio.</p></div>
+    <div class="sc"><div class="si">⚕️</div><h3>Cirugía oral</h3><p>Extracciones simples y complejas. Muelas del juicio, raíces retenidas y más.</p></div>
+    <div class="sc"><div class="si">🦷</div><h3>Odontología general</h3><p>Limpiezas, caries y controles para mantener tu salud bucal en orden.</p></div>
+    <div class="sc"><div class="si">🔬</div><h3>Endodoncia</h3><p>Tratamientos de conducto precisos para salvar la pieza y eliminar el dolor.</p></div>
+    <div class="sc"><div class="si">🩺</div><h3>Urgencias dentales</h3><p>Atención rápida para dolores agudos y situaciones que no pueden esperar.</p></div>
+    <div class="sc"><div class="si">✨</div><h3>Estética dental</h3><p>Blanqueamiento y restauraciones para completar tu tratamiento con una sonrisa.</p></div>
+  </div>
+</section>
+
+<section class="porque" id="nosotros">
+  <div class="lbl">Por qué elegirnos</div>
+  <h2>Experiencia que se nota</h2>
+  <p class="sub">Pacientes que llegan por recomendación y se van con resultados que superan sus expectativas.</p>
+  <div class="pinner">
+    <ul class="plist">
+      <li class="pitem"><div><h4>Alta resolución en cirugías</h4><p>Extracciones complejas resueltas en minutos, con mínima molestia y buena recuperación.</p></div></li>
+      <li class="pitem"><div><h4>Implantes bien planificados</h4><p>Evaluación completa antes de cualquier colocación. Sin improvisaciones.</p></div></li>
+      <li class="pitem"><div><h4>Trato humano y explicaciones claras</h4><p>Te contamos qué se va a hacer en cada paso para que vayas sin miedo.</p></div></li>
+      <li class="pitem"><div><h4>Seguimiento post-operatorio</h4><p>No te dejamos solo después del procedimiento. Disponibles ante cualquier consulta.</p></div></li>
+    </ul>
+    <div class="pvisual">
+      <div class="pbig">9.4</div>
+      <p>puntos promedio en Google con más de 15 reseñas</p>
+      <div class="pdiv"></div>
+      <div class="pfacts">
+        <div><strong>+15</strong><span>Reseñas</span></div>
+        <div><strong>9.4★</strong><span>Google</span></div>
+        <div><strong>Implantes</strong><span>Especialidad</span></div>
+        <div><strong>Bahía Blanca</strong><span>Viamonte 146</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="testimonios" id="opiniones">
+  <div class="lbl">Testimonios</div>
+  <h2>Lo que dicen nuestros pacientes</h2>
+  <p class="sub">Más de 15 opiniones reales con 9.4 sobre 10 de promedio.</p>
+  <div class="tgrid">
+    <div class="tcard"><div class="th"><div class="tstars">★★★★★</div><div class="tbadge">Cirugía</div></div><p class="ttext">"Me realizó una extracción compleja que otros no se animaban. Técnica impresionante y sin dolor. Muy recomendable."</p><span class="tautor">— Diego M.</span></div>
+    <div class="tcard"><div class="th"><div class="tstars">★★★★★</div><div class="tbadge">Implantes</div></div><p class="ttext">"Le colocó implantes a mi mamá y quedó perfecta. La planificación fue excelente y la recuperación muy buena."</p><span class="tautor">— Valeria T.</span></div>
+    <div class="tcard"><div class="th"><div class="tstars">★★★★☆</div><div class="tbadge">General</div></div><p class="ttext">"Muy buen profesional. Trato cercano y resultados a la altura. Ya lo tengo como mi dentista de cabecera."</p><span class="tautor">— Marcelo F.</span></div>
+  </div>
+</section>
+
+<section class="contacto" id="contacto">
+  <div class="lbl">Contacto</div>
+  <h2>Reservá tu consulta</h2>
+  <p class="sub">Primera consulta de evaluación sin compromiso. Analizamos tu caso.</p>
+  <div class="cinner">
+    <div class="cinfo">
+      <div class="ci"><div class="ci-ico">📍</div><div><h4>Dirección</h4><p>Viamonte 146, Consultorio 2<br>Bahía Blanca</p></div></div>
+      <div class="ci"><div class="ci-ico">📞</div><div><h4>WhatsApp</h4><p>+54 9 291 532-3467</p></div></div>
+      <div class="ci"><div class="ci-ico">💳</div><div><h4>Obras sociales</h4><p>Principales obras sociales<br>y planes de pago</p></div></div>
+    </div>
+    <div class="cform">
+      <input type="text" placeholder="Tu nombre completo"/>
+      <input type="tel" placeholder="Tu WhatsApp"/>
+      <select><option value="" disabled selected>¿Qué tratamiento necesitás?</option><option>Implante dental</option><option>Extracción / Cirugía</option><option>Consulta de evaluación</option><option>Urgencia</option><option>Endodoncia</option><option>Otra consulta</option></select>
+      <a href="https://wa.me/5492915323467?text=Hola%20Dr.%20Ben%C3%ADtez%2C%20quiero%20pedir%20un%20turno" class="btn-wa" target="_blank">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+        Contactar por WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+<footer><p>© 2025 <strong>Dr. Jorge H. Benítez – Cirugía Dental</strong> · Viamonte 146 Cons. 2, Bahía Blanca · Todos los derechos reservados.</p></footer>
+</body>
+</html>
